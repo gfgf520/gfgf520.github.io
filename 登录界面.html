@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>谷菲</title>
+    <style>
+        /* 可以设计页面的属性 */
+        * {
+            margin: 0 ;
+            padding: 0 ;
+        }
+
+        /* 用来编辑此网页 */
+        html {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            background: url(background.png) no-repeat 0px 0px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            -moz-background-size: 100% 100%;
+        }
+
+        /* 此网页的主体部分 */
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            background: url(D:/one.jpg)no-repeat;
+            background-size: cover;
+            
+
+        }
+        /* 登录界面的属性设置 */
+        #loginDiv {
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            /* 左右居中 */
+            align-items: center;
+            /* 上下居中 */
+            height: 400px;
+            background-color: mistyrose;
+            box-shadow: 7px 7px 17px;
+            border-radius: 250px;
+
+        }
+
+        p {
+            margin-top: 30px;
+            /* 页边空白 */
+            margin-left: 20px;
+            /* 左边距 */
+            color: black;
+        }
+        /* 输入框标签 */
+        input {
+            margin-left: 15px;
+            border-radius: 5px;
+            border-style: hidden;
+            height: 30px;
+            width: 140px;
+            background-color: black;
+            outline: none;
+            color: #f0edf3;
+            padding-left: 10px;
+
+        }
+        /* 按钮标签属性 */
+        .button {
+            border-color: darksalmon;
+            background-color: rgba(100, 149, 237, 0.7);
+            color: aliceblue;
+            border-style: hidden;
+            border-radius: 5px;
+            width: 100px;
+            height: 31px;
+            font-size: 16px;
+
+        }
+      
+    </style>
+    <style type="text/css">
+        input::-ms-input-placeholder {
+            text-align: center;
+        }
+
+        input::-webkit-input-placeholder {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 定义登录界面背景属性及提示语 -->
+    <div id="loginDiv">
+        <form action="" id="from">
+            <h1 style="text-align:center;color: palevioletred;">立即登录</h1>
+            <p>邮箱:<input id="email" type="text" email color="red"></p>
+
+            <p>密码:<input id="password" type="password" placeholder="密码长度至少为6位"></p>
+            <p style="text-align:center;color: chartreuse;"><a href="#">忘记密码？</a></p>
+            
+            <div style="text-align:center;margin-top: 30px;color: blueviolet;">
+                <input type="button" id="登录" class="button" value="登录" onclick="login_click()">
+                <input type="button" id="注册" class="button" value="注册" onclick="register_click()">
+            </div>
+        </form>
+    </div>
+    <script>
+        function login_click() {
+
+            if (document. getElementById ("email") .value=="abc")
+            {
+            if (document. getElementById ("password") .value=="123456")
+            {
+            alert ("yes") ;
+            }
+            else
+            {
+            alert ("no") ;
+            }
+            }
+            else
+            {
+            alert ("no") ;
+            }
+        }
+        </script>
+
+
+        <!-- 定义客户端脚本 -->
+<!-- <script>
+            
+            var password = $("password").value;
+            var email = $("email").value;
+            
+
+            function register_click() {
+                window.location.href = "file:///D:/vs%20code/%E6%88%90%E5%8A%9F%E7%95%8C%E9%9D%A2.html";
+
+            }
+            function login_click() {
+                var login_click = document.getElementById("登录").value;
+                var register_click = document.getElementById("注册").value;
+                if (email='' && password!='') {
+                    var password = $("password").value;
+                    var email = $("email").value;
+                   
+                    if (email=="abc" && password=="123456") {
+                        window.location.href = "file:///D:/vs%20code/%E6%88%90%E5%8A%9F%E7%95%8C%E9%9D%A2.html";
+                    }
+                    else {
+                        alert("邮箱或密码错误，请重新输入!");
+                    }
+                }
+                else {
+                    alert("检查邮箱和密码是否符合规定!");
+                }
+
+            }
+
+
+        </script> -->
+    </div>
+
+</body>
+
+</html>
